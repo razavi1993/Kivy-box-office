@@ -1,0 +1,33 @@
+<MyLayout>:
+	orientation: "vertical"
+
+	Label:
+		text: "Movie List"
+		font_size: 24
+		color: 0,0,0,1
+		pos_hint: {'center_x': 0.125, 'center_y': 0.90}
+		size_hint: 0.24,0.08
+
+	TextInput:
+		hint_text: "1-10"
+		font_size: 24
+		pos_hint: {'center_x': 0.375, 'center_y': 0.90}
+		size_hint: 0.24,0.08
+		id: list_inds
+
+	Button:
+		text: "Show"
+		font_size: 24
+		pos_hint: {'center_x': 0.625, 'center_y': 0.90}
+		size_hint: 0.24,0.08
+		on_press: root.show_table()
+
+	Label:
+		text: ""
+		font_size: 24	
+		color: 0,0,0,1
+		pos_hint: {'center_x': 0.875, 'center_y': 0.90}
+		size_hint: 0.24,0.08
+		id: error
+
+
